@@ -3,10 +3,11 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
-            <title>Workbook 2</title>
+            <title>Workbook 4</title>
 
         <!--put your external stylesheet links here-->
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet", href="lib/leaflet/leaflet.css">
         <!--[if IE<9]>
             <link rel="stylesheet" href="css/style.ie.css">
         <![endif]-->
@@ -14,7 +15,7 @@
             place these within <style> tags-->
 
         <style>
-
+        #mapid{ width: 900px; height: 500px; }
         </style>
     </head>
 
@@ -22,17 +23,20 @@
         <!--put your initial page content here-->
         <!--you can also use this space for internal scripts;
         place these within <script> tags-->
-        <div id="mydiv">
-        </div>
+        <div id="mapid"></div>
 
         <script>
+        "use strict" // keeps code good
+        /*
           function titlefunc(){
             var mydiv = document.getElementById("mydiv");
             mydiv.innerHTML = "US Population";
           }
           window.onload = titlefunc();
+          */
         </script>
         <!--put your external script links here-->
+        <script type="text/javascript" src="lib/leaflet/leaflet-src.js"></script>
         <script type="text/javascript" src="lib/jquery-3.6.0.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
     </body>
